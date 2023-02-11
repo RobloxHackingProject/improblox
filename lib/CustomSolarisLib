@@ -1,8 +1,9 @@
 --https://raw.githubusercontent.com/Stebulous/solaris-ui-lib/main/source.lua
 
 -- This User Interface Library is brought to you by Solaris Software and THRP.
+print(V1.0)
 local Solaris = Instance.new("ScreenGui")
-Solaris.Name = "gui"
+Solaris.Name = "Solarisgui"
 Solaris.Parent = game.CoreGui
 Solaris.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -29,7 +30,9 @@ local function CheckKey(tab, key)
 	end
 end
 
-
+local function Library:Toggle()
+Solaris.Enabled = not Solaris.Enabled
+end
 
 local NotificationFrame = game:GetObjects("rbxassetid://6924028278")[1]
 NotificationFrame.ZIndex = 4
