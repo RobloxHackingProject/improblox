@@ -29,7 +29,7 @@ local function CheckKey(tab, key)
 	end
 end
 
-local function Toggle()
+function Toggle()
 Solaris.Enabled = not Solaris.Enabled
 end
 
