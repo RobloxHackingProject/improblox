@@ -7,7 +7,6 @@ if game.CoreGui:FindFirstChild("Solarisgui") then game.CoreGui:FindFirstChild("S
 end)
 
 local Solaris = Instance.new("ScreenGui")
-_ui = Solaris
 Solaris.Name = "Solarisgui"
 Solaris.Parent = game.CoreGui
 Solaris.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -33,10 +32,6 @@ local function CheckKey(tab, key)
 			return true
 		end
 	end
-end
-
-function Toggle()
-_ui.Enabled = not _ui.Enabled
 end
 
 local NotificationFrame = game:GetObjects("rbxassetid://6924028278")[1]
