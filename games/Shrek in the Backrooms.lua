@@ -67,15 +67,12 @@ game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("Sprint").Enable
 end
 end)
 
-local toggle = sec:Toggle("Better HealthCounter", true,"healthUI", function(bool)
+local toggle = sec:Toggle("Disable HealthCounter", false,"healthUI", function(bool)
 if bool then
 game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("Health").Enabled = false
 end
 if not bool then
-pcall(function()
 game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("Health").Enabled = true
-game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("betterhealth"):Destroy()
-end)
 end
 end)
 
