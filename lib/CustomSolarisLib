@@ -1,7 +1,6 @@
 --https://raw.githubusercontent.com/Stebulous/solaris-ui-lib/main/source.lua
-
--- This User Interface Library is brought to you by Solaris Software and THRP.
 print(V1.0)
+-- This User Interface Library is brought to you by Solaris Software and THRP.
 local Solaris = Instance.new("ScreenGui")
 Solaris.Name = "Solarisgui"
 Solaris.Parent = game.CoreGui
