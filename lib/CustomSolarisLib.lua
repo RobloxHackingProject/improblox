@@ -1,5 +1,5 @@
 --https://raw.githubusercontent.com/Stebulous/solaris-ui-lib/main/source.lua
-print(V1.0)
+print('V1.0')
 -- This User Interface Library is brought to you by Solaris Software and THRP.
 local Solaris = Instance.new("ScreenGui")
 Solaris.Name = "Solarisgui"
@@ -29,7 +29,7 @@ local function CheckKey(tab, key)
 	end
 end
 
-local function Library:Toggle()
+local function Toggle()
 Solaris.Enabled = not Solaris.Enabled
 end
 
