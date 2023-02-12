@@ -1,7 +1,13 @@
 --https://raw.githubusercontent.com/Stebulous/solaris-ui-lib/main/source.lua
 print('V1.0')
 -- This User Interface Library is brought to you by Solaris Software and THRP.
+pcall(function() --Remove UI if it already exists.
+if game.CoreGui:FindFirstChild("notiHolder") then game.CoreGui:FindFirstChild("notiHolder"):destroy() end
+if game.CoreGui:FindFirstChild("Solarisgui") then game.CoreGui:FindFirstChild("Solarisgui"):destroy() end
+end)
+
 local Solaris = Instance.new("ScreenGui")
+_ui = Solaris
 Solaris.Name = "Solarisgui"
 Solaris.Parent = game.CoreGui
 Solaris.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -30,7 +36,7 @@ local function CheckKey(tab, key)
 end
 
 function Toggle()
-Solaris.Enabled = not Solaris.Enabled
+_ui.Enabled = not _ui.Enabled
 end
 
 local NotificationFrame = game:GetObjects("rbxassetid://6924028278")[1]
