@@ -133,7 +133,7 @@ end)
 
 
 local toggle = sec2_2:Toggle("Get CFrame of part clicked on", false,"debug", function(bool)
-if bool then
+pcall(function()
 local mouse = game.Players.LocalPlayer:GetMouse()
 
 mouse.Button1Up:Connect(function()
@@ -141,6 +141,7 @@ mouse.Button1Up:Connect(function()
         local targeted = tostring(mouse.Target.CFrame)
         setclipboard(targeted)
     end
+end)
 end)
 end
 end)
