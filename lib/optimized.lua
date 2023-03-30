@@ -1,5 +1,5 @@
 --https://raw.githubusercontent.com/Stebulous/solaris-ui-lib/main/source.lua
-print('V1.2')
+print('V1.0')
 -- This User Interface Library is brought to you by Solaris Software and THRP.
 pcall(function() --Remove UI if it already exists.
 if game.CoreGui:FindFirstChild("notiHolder") then game.CoreGui:FindFirstChild("notiHolder"):destroy() end
@@ -257,7 +257,7 @@ function SolarisLib:New(Config)
     local MenuBtnPreset = game:GetObjects("rbxassetid://7037141226")[1]
     local SettingsBtn = MenuBtnPreset:Clone()
     SettingsBtn.Parent = MFrame.TopBar.ButtonHolder.MenuBtn.MenuFrame
-    SettingsBtn.Position = UDim2.new(0,0,0,25)
+    SettingsBtn.Position = UDim2.new(0,0,0,5)
     SettingsBtn.Text = "Settings"
     SettingsBtn.MouseEnter:Connect(function() TweenService:Create(SettingsBtn,TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{TextTransparency = 0}):Play() end)
     SettingsBtn.MouseLeave:Connect(function() TweenService:Create(SettingsBtn,TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{TextTransparency = 0.4}):Play() end)
