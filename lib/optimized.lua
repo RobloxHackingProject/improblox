@@ -1,5 +1,5 @@
 --https://raw.githubusercontent.com/Stebulous/solaris-ui-lib/main/source.lua
-print('V1.0')
+print('V1.1')
 -- This User Interface Library is brought to you by Solaris Software and THRP.
 pcall(function() --Remove UI if it already exists.
 if game.CoreGui:FindFirstChild("notiHolder") then game.CoreGui:FindFirstChild("notiHolder"):destroy() end
@@ -483,7 +483,6 @@ function SolarisLib:New(Config)
         appearance:Dropdown("Theme", "The look of the user interface", {"Default", "Discord", "Red", "Green", "Blue"}, "Default", "Theme")
 
     end 
-    MusicConstructor()
     SettingsConstructor()
 
     local function OpenTabMenu()
