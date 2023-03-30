@@ -1,5 +1,5 @@
 --https://raw.githubusercontent.com/Stebulous/solaris-ui-lib/main/source.lua
-print('V1.1')
+print('V1.2')
 -- This User Interface Library is brought to you by Solaris Software and THRP.
 pcall(function() --Remove UI if it already exists.
 if game.CoreGui:FindFirstChild("notiHolder") then game.CoreGui:FindFirstChild("notiHolder"):destroy() end
@@ -157,7 +157,6 @@ local SolarisLib = {
     Settings = {
         Theme = "Default",
         ShowFriendsOnLaunch = true,
-        ShowMusicOnLaunch = false,
         CloseBind = "RightControl"
     },
     Flags = {},
@@ -476,7 +475,6 @@ function SolarisLib:New(Config)
         end   
         
         local general = Settings:Tab("General")
-        general:ToggleSetting("Show Music On Launch", "Shows the music menu when you load Snow Hub", true, "ShowMusicOnLaunch")
         general:BindSetting("Close Bind", "Hides/Shows the main window when pressed.", Enum.KeyCode.RightControl, "CloseBind")
         
         local appearance = Settings:Tab("Appearance")
